@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/num1"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="36dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:hint="Primer Numero"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/num2" android:layout_marginTop="72dp"
+            app:layout_constraintTop_toBottomOf="@+id/num1" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:hint="Segundo Numero"
+            app:layout_constraintHorizontal_bias="0.477"/>
+    <Button
+            android:text="Calcula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button" android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/num2" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.465"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="147dp"
+            android:layout_height="42dp"
+            android:id="@+id/resultado" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/button" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+</android.support.constraint.ConstraintLayout>
